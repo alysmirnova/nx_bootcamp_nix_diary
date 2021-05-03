@@ -7,11 +7,19 @@
 ## Команды
 
 ```bash diary.sh help ``` - вызов справки.
+
 ```bash diary.sh add``` - создание новой записи.
+
 ```bash diary.sh add -t``` - создание записи с выбором шаблона.
+
 ```bash diary.sh config -d``` - изменение каталога для сохранения записей.
+
 ```bash diary.sh config -e``` - изменение текстового редактора для открытия по умолчанию.
+
 ```bash diary.sh delete``` - удаление записи.
+
 ```bash diary.sh restore``` - восстановление записи из корзины.
+
 ```bash diary.sh stats``` - статистика.
+
 ```bash diary.sh template ``` - создание шаблона.
