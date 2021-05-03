@@ -1,13 +1,12 @@
-#! /bin/bash
-#source $HOME/.diaryrc
+﻿#! /bin/bash
+
 source .diarysc
 mkdir -p $DIARY_PATH
 cd $DIARY_PATH
 mkdir -p "корзина"
 MONTHS=(января февраля марта апреля мая июня июля августа сентября октября ноября декабря)
-
 if (( $# == 0))
 then
-   echo "Команда для установки программы - diary.sh install
+   echo "Команда для установки программы - compile.sh
 Вывод списка команд - diary.sh help"
 fi

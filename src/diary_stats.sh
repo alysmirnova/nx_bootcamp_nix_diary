@@ -1,8 +1,4 @@
-#! /bin/bash
-
-#
-# Команда stats
-#
+﻿#! /bin/bash
 
 if [[ $1 == stats ]]
 then 

@@ -1,4 +1,4 @@
-#! /bin/bash
+﻿#! /bin/bash
   
 createTemplate() {
  printf "Введите имя: "
@@ -25,16 +25,13 @@ createNoteFromTemplate() {
 	then
 		echo $templatePath not found
 	else
-                cd $DIARY_PATH/templates/
-                #cp $file $d/корзина/
-       
+                cd $DIARY_PATH/templates
                 cp $file $DIARY_PATH/$(date +%Y)/$(date +%B)/
                 cd /
                 cd $DIARY_PATH/$(date +%Y)/$(date +%B)/
                 mv $file ID__$(date +"%F_%H-%M").md
 		exec $EDITOR ID__$(date +"%F_%H-%M").md
-	fi
-	
+	fi	
 }
 
 if [[ $1 == template ]]
