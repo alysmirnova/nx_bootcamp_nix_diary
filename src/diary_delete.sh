@@ -2,7 +2,6 @@
 
 if [[ $1 == delete ]]
 then
-    #cd /
     cd $DIARY_PATH
     printf "Введите название файла: "
     read file

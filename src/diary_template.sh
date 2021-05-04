@@ -25,9 +25,7 @@ createNoteFromTemplate() {
 	then
 		echo $templatePath not found
 	else
-                cd $DIARY_PATH/templates/
-                #cp $file $d/корзина/
-       
+                cd $DIARY_PATH/templates/       
                 cp $file $DIARY_PATH/$(date +%Y)/$(date +%B)/
                 cd /
                 cd $DIARY_PATH/$(date +%Y)/$(date +%B)/
