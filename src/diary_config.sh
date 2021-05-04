@@ -6,9 +6,9 @@ then
     then
     	printf "Введите полный путь: "
     	read way
-    	cat ~/.diarysc | grep $DIARY_PATH > ~/.diarysc
+    	cat ~/.diaryrc | grep $DIARY_PATH > ~/.diaryrc
     	echo "DIARY_PATH=$way
-EDITOR=$EDITOR" >> ~/.diarysc
+EDITOR=$EDITOR" >> ~/.diaryrc
     	mkdir -p $way
     	cd $way
     fi
@@ -16,8 +16,8 @@ EDITOR=$EDITOR" >> ~/.diarysc
     then 
        printf "Введите путь до программы: "
        read way
-       cat ~/.diarysc | grep $EDITOR > ~/.diarysc
+       cat ~/.diaryrc | grep $EDITOR > ~/.diaryrc
        echo "EDITOR=$way
-DIARY_PATH=$DIARY_PATH" >> ~/.diarysc
+DIARY_PATH=$DIARY_PATH" >> ~/.diaryrc
     fi
 fi

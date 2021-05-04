@@ -1,6 +1,6 @@
 ﻿#! /bin/bash
 
-source .diarysc
+source .diaryrc
 mkdir -p $DIARY_PATH
 cd $DIARY_PATH
 mkdir -p "корзина"
