@@ -9,6 +9,5 @@
     tail +2 src/diary_config.sh; \
     tail +2 src/diary_stats.sh; \
     tail +2 src/diary_delete.sh; \
-    tail +2 src/diary_backup.sh; \
 } > diary.sh
 echo "Compilation is successful"
