@@ -1,4 +1,6 @@
-﻿#! /bin/bash
+#! /bin/bash
+
+# Команда add [-t <имя_шаблона>]
 
 if [[ $1 == add ]]
 then

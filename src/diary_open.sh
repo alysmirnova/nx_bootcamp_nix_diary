@@ -4,7 +4,7 @@ if [[ $1 == open ]]
 then
 	cd /
 	cd $DIARY_PATH
-	printf "Введите название файла: "
+	printf "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ С„Р°Р№Р»Р°: "
 	read file
 	if [[ "${file: -3}" != ".md" ]]; then file="$file.md"
 	fi 
@@ -22,10 +22,10 @@ then
      	done
 	if [ "$flag" == "0" ]
 	then 
-	    echo "$file не найден"
+	    echo "$file РЅРµ РЅР°Р№РґРµРЅ"
 	else 
 		cd ${file:4:4}
 		cd ${MONTHS[${file:9:2}-1]}
 		exec $EDITOR $file <&-
 	fi  	
-fi 
+fi      
