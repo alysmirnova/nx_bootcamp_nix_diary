@@ -1,2 +1,2 @@
 EDITOR=/bin/gedit
-DIARY_PATH=/home/alyona/diary
+DIARY_PATH=$HOME/diary
