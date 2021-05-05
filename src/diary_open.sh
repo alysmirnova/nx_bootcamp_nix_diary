@@ -18,9 +18,9 @@ then
     read num
     while ! [[ $num =~ $re  &&  $num -le ${#arr_year[@]}  &&  $num -ge 1 ]]
     do
-    	echo "Ошибка"
-    	printf "Введите номер: "
-		read num
+        echo "Ошибка"
+        printf "Введите номер: "
+        read num
     done
     
     i=1
@@ -37,7 +37,7 @@ then
     do
     	echo "Ошибка"
     	printf "Введите номер: "
-		read num2
+        read num2
     done
     
     if [[ "${arr_year[num-1]: -7}" == "шаблоны" ]];
@@ -58,7 +58,7 @@ then
     do
     	echo "Ошибка"
     	printf "Введите номер: "
-		read num
+        read num
     done
     exec $EDITOR $file	
 fi      

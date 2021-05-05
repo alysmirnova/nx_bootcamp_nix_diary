@@ -20,7 +20,7 @@ then
     	do
     		echo "Ошибка"
     		printf "Введите номер: "
-			read num
+	        read num
     	done   	
       	file=${array[num-1]}
       	cd $DIARY_PATH/корзина/

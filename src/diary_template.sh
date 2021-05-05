@@ -15,10 +15,10 @@ printTemplates(){
 }
 
 createNoteFromTemplate() {
-	i=1
+    i=1
     for template in "$DIARY_PATH/шаблоны"/*
     do
-        echo "$template"
+    echo "$template"
     done
     
     printf "Введите название файла: "
@@ -33,11 +33,11 @@ createNoteFromTemplate() {
     then
         echo $file не найден
     else
-		cp $file $DIARY_PATH/$(date +%Y)/$(date +%B)/
-		cd $DIARY_PATH/$(date +%Y)/$(date +%B)/
+	cp $file $DIARY_PATH/$(date +%Y)/$(date +%B)/
+	cd $DIARY_PATH/$(date +%Y)/$(date +%B)/
     	mv $file ID__$(date +"%F_%H-%M").md
-		exec $EDITOR ID__$(date +"%F_%H-%M").md
-	fi	
+	exec $EDITOR ID__$(date +"%F_%H-%M").md
+    fi	
 }
 
 if [[ $1 == template ]]
