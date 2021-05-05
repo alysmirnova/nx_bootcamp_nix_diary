@@ -13,13 +13,15 @@ then
     echo "3) сколько записей сделано за каждый год и месяц"
     for entry in "$DIARY_PATH"/*
     do
-        if [[ $entry != "$DIARY_PATH/корзина" &&  $entry != "$DIARY_PATH/templates" ]]; then
+        if [[ $entry != "$DIARY_PATH/корзина" &&  $entry != "$DIARY_PATH/templates" ]]; 
+        then
             n=$(ls $entry -laR | grep ^- | wc -l)
             echo "${entry: -11} - $n"
         fi
         for entry2 in "$entry"/*
         do
-            if [[ $entry != "$DIARY_PATH/корзина" && $entry != "$DIARY_PATH/templates" ]]; then
+            if [[ $entry != "$DIARY_PATH/корзина" && $entry != "$DIARY_PATH/templates" ]]; 
+            then
                 m=$(ls $entry2 -laR | grep ^- | wc -l) 
                 echo "  ${entry2:19} - $m"
             fi
